@@ -101,10 +101,7 @@ h3 {
 
 .container {
     width: min(1101px, 85%);
-    margin: auto;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    margin: 20px auto;
 }
 
 .heading {
@@ -189,4 +186,27 @@ datalist:focus {
 
 .logo {
     margin: 0 auto;
+}
+
+/* dashboard */
+.event-floors {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.event-floors img{
+    width: 250px;
+    height: 165px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.171) 0px 25px 50px -12px;
+}
+
+.event-floors article {
+    flex-basis: 33.333333%;
+    margin-top: 5rem;
+}
+
+.event-floors article h2 {
+    margin-top: .8rem;
 }
