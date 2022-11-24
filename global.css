@@ -109,7 +109,7 @@ h3 {
 
 .heading {
     border-bottom: 5px solid var(--gold);
-    border-bottom-style:double;
+    border-bottom-style: double;
     width: max-content;
 }
 
@@ -147,6 +147,9 @@ input {
     padding: 1rem 1.6rem;
     text-align: start;
     color: var(--dark);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 input::placeholder {
