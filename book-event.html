@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    <title>Twin Waters Event Manager</title>
+</head>
+
+<body>
+    <header class="container">
+        <img src="./assets/img/logo.png" alt="Twin Waters Logo" width="100px" class="logo">
+    </header>
+
+
+    <main class="container event-summary">
+        <section class="sidebar">
+            <div>
+                <h1 class="heading">Book an Event</h1>
+                <div class="calendar-wrapper">
+                    <h1>November</h1>
+                    <ul class="calendar">
+                        <li class="weekday">Sun</li>
+                        <li class="weekday">Mon</li>
+                        <li class="weekday">Tue</li>
+                        <li class="weekday">Wed</li>
+                        <li class="weekday">Thu</li>
+                        <li class="weekday">Fri</li>
+                        <li class="weekday">Sat</li>
+
+                        <li class="first-day">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="rooftop.html" class="active">Rooftop view ></a></li>
+                <li><a href="">Maradiva</a></li>
+                <li><a href="">788 on the Sea</a></li>
+                <li><a href="">Chai Tang</a></li>
+                <li><a href="">Rufus & Bee</a></li>
+                <li><a href="">Bowling Games & Bar</a></li>
+            </ul>
+        </section>
+
+        <section class="main-content book-event">
+            <form action="">
+                <label for="date">Select a date</label>
+                <input type="date" name="date" id="date">
+
+                <label for="">Whats the Event Type?</label>
+                <select name="event-type" id="event-type">
+                    <option value="">Select an event type</option>
+                    <option value="">Birthday Party</option>
+                    <option value="">Wedding Reception</option>
+                    <option value="">Marriage Proposal</option>
+                    <option value="">Anniversary</option>
+                    <option value="">Office Get-Together</option>
+                    <option value="">Team Bonding</option>
+                </select>
+
+                <label for="">Catering</label>
+                <select name="catering" id="catering">
+                    <option value="">Select a catering type</option>
+                    <option value="">Self cater</option>
+                    <option value="">In-house cater</option>
+                </select>
+
+                <label for="">Refreshment</label>
+                <select name="refreshment" id="refreshment">
+                    <option value="">Select a refreshment type</option>
+                    <option value="">Corkage</option>
+                    <option value="">In-house service</option>
+                </select>
+
+                <label for="">Music</label>
+                <select name="music" id="music">
+                    <option value="">Select a music type</option>
+                    <option value="">Hire DJ</option>
+                    <option value="">In-house music</option>
+                </select>
+
+                <label for="">Decoration</label>
+                <select name="decoration" id="decoration">
+                    <option value="">Select a decoration type</option>
+                    <option value="">Hired decorator</option>
+                </select>
+
+                <label for="">Requirement</label>
+                <select name="requirement" id="requirement">
+                    <option value="">Select a requirement</option>
+                    <option value="">Security deposit</option>
+                </select>
+
+                <label for="">Payment status</label>
+                <select name="payment-status" id="payment-status">
+                    <option value="">Select a payment status</option>
+                    <option value="">Full payment</option>
+                    <option value="">Part payment</option>
+                </select>
+
+                <label for="">Payment details</label>
+                <textarea name="payment-details" id="" cols="30" rows="10" placeholder="Describe the payment details"></textarea>
+
+                <button type="submit">Book Event</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>

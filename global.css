@@ -154,7 +154,7 @@ input::placeholder {
     color: #797B79;
 }
 
-.btn {
+.login-btn {
     min-width: 12.5rem;
     min-height: 4rem;
     font-family: var(--ff-bold);
@@ -176,8 +176,8 @@ a {
 
 a:hover,
 a:hover,
-.btn:hover,
-.btn:active {
+.login-btn:hover,
+.login-btn:active {
     opacity: 0.5;
     transition: 0.5;
 }
@@ -272,21 +272,27 @@ li {
     justify-content: space-between;
 }
 
-button {
+button,
+.btn {
     border: 1px solid var(--gold);
     border-radius: .8rem;
     font-size: 1.4rem;
     padding: .5rem 1.2rem;
-    text-align: start;
     color: white;
     background-color: var(--dark);
     font-family: var(--ff-bold);
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-.event-summary button:hover {
+.event-summary button:hover,
+.btn:hover {
     background-color: var(--gold);
     transform: 0.2;
+    opacity: 1;
+
 }
 
 .active {
@@ -326,4 +332,27 @@ button {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+/* create an event */
+.book-event input,
+.book-event select {
+    border: 1px solid var(--gray);
+    border-radius: .6rem;
+    font-size: 1.4rem;
+    padding: .3rem .6rem;
+    text-align: start;
+    color: var(--dark);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.book-event form {
+    background-color: initial;
+    border: 1px solid var(--gold);
+}
+
+.book-event label {
+    font-size: 1.5rem;
 }
