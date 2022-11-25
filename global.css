@@ -180,14 +180,10 @@ input {
     padding: 1rem 1.6rem;
     text-align: start;
     color: var(--dark);
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none; */
 }
-
-/* 
-input[type="date"] {
-} */
 
 input::placeholder {
     color: #797B79;
