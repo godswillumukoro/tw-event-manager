@@ -109,7 +109,7 @@
                 <label for="">Music</label>
                 <select name="music" id="music">
                     <option value="">Select a music type</option>
-                    <option value="">Hire DJ</option>
+                    <option value="">Hired DJ</option>
                     <option value="">In-house music</option>
                 </select>
 
@@ -119,11 +119,22 @@
                     <option value="">Hired decorator</option>
                 </select>
 
-                <label for="">Requirement</label>
-                <select name="requirement" id="requirement">
-                    <option value="">Select a requirement</option>
-                    <option value="">Security deposit</option>
-                </select>
+                <label for="">Security deposit</label>
+                <div class="sub-label-contents">
+                    <div>
+                        <input type="radio" name="security-deposit" id="required" value="Required">
+                        <label for="required">Required</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="security-deposit" id="not-required" value="Not required">
+                        <label for="not-required">Not required</label>
+                    </div>
+                    <select name="requirement" id="requirement">
+                        <option value="">Select if required</option>
+                        <option value="">Paid</option>
+                        <option value="">Not paid</option>
+                    </select>
+                </div>
 
                 <label for="">Payment status</label>
                 <select name="payment-status" id="payment-status">
@@ -133,7 +144,8 @@
                 </select>
 
                 <label for="">Payment details</label>
-                <textarea name="payment-details" id="" cols="30" rows="10" placeholder="Describe the payment details"></textarea>
+                <textarea name="payment-details" id="" cols="30" rows="10"
+                    placeholder="Describe the payment details"></textarea>
 
                 <button type="submit">Book Event</button>
             </form>

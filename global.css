@@ -101,7 +101,7 @@ select {
 
 /* color date on hover */
 .first-day:hover,
-.first-day ~ li:hover {
+.first-day~li:hover {
     background-color: var(--accent);
     color: var(--dark);
     border-radius: 50%;
@@ -114,7 +114,7 @@ select {
     color: var(--accent);
 }
 
-.owl-effect > *+* {
+.owl-effect>*+* {
     margin-top: 1rem;
 }
 
@@ -180,6 +180,9 @@ input {
     padding: 1rem 1.6rem;
     text-align: start;
     color: var(--dark);
+}
+
+input[type=date] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -285,7 +288,7 @@ datalist:focus {
 }
 
 .event-summary--text button,
-.event-summary--text .btn{
+.event-summary--text .btn {
     margin-top: 1.6rem;
 }
 
@@ -391,9 +394,9 @@ button,
     padding: .3rem .6rem;
     text-align: start;
     color: var(--dark);
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none; */
 }
 
 .book-event form {
@@ -405,3 +408,15 @@ button,
     font-size: 1.5rem;
 }
 
+.book-event input,
+.book-event select,
+.sub-label-contents label,
+.sub-label-contents input {
+    font-size: .8rem;
+}
+
+.sub-label-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
