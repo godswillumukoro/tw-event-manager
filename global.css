@@ -82,9 +82,44 @@ select {
 :root {
     --dark: #181818;
     --gold: #CC9A4F;
+    --accent: #61BC90;
 
     --ff-bold: 'Oswald', sans-serif;
     --ff-regular: 'Manrope', sans-serif;
+}
+
+.text-accent {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.today {
+    background-color: var(--accent);
+    color: var(--dark);
+    border-radius: 50%;
+}
+
+/* color date on hover */
+.first-day:hover,
+.first-day ~ li:hover {
+    background-color: var(--accent);
+    color: var(--dark);
+    border-radius: 50%;
+}
+
+.no-event-text {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2.4rem 0;
+    color: var(--accent);
+}
+
+.owl-effect > *+* {
+    margin-top: 1rem;
+}
+
+.mgt-2 {
+    margin-top: 2rem;
 }
 
 body {
@@ -172,6 +207,8 @@ input::placeholder {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 a:hover,
@@ -247,7 +284,8 @@ datalist:focus {
     margin-bottom: .45rem;
 }
 
-.event-summary--text button {
+.event-summary--text button,
+.event-summary--text .btn{
     margin-top: 1.6rem;
 }
 
@@ -283,8 +321,17 @@ button,
     font-family: var(--ff-bold);
     cursor: pointer;
     text-align: center;
+}
+
+.btn-bookevent {
     display: flex;
     align-items: center;
+}
+
+.show-all {
+    border-bottom: 5px solid var(--gold);
+    /* border-bottom-style: double; */
+    width: max-content;
 }
 
 .event-summary button:hover,
@@ -303,6 +350,7 @@ button,
 
 .calendar-wrapper {
     margin-top: 3rem;
+    margin-bottom: .5rem;
 }
 
 .calendar-wrapper .calendar {
@@ -356,3 +404,4 @@ button,
 .book-event label {
     font-size: 1.5rem;
 }
+
