@@ -182,7 +182,7 @@ input {
     color: var(--dark);
 }
 
-input[type=date] {
+input[type="date"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
