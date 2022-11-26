@@ -99,6 +99,10 @@ select {
     border-radius: 50%;
 }
 
+.txt-sm {
+    font-size: .9rem;
+}
+
 /* color date on hover */
 .first-day:hover,
 .first-day~li:hover {
@@ -120,6 +124,27 @@ select {
 
 .mgt-2 {
     margin-top: 2rem;
+}
+
+.mgt-5 {
+    margin-top: 5rem;
+}
+
+.pdt-2 {
+    padding-top: 2rem;
+}
+
+.pdtb-2 {
+    padding: 2rem 0;
+}
+
+.w-3 {
+    max-width: 90%;
+    margin: 2px;
+}
+
+.mgb-2 {
+    margin-bottom: 2rem;
 }
 
 body {
@@ -144,6 +169,20 @@ li {
     border-bottom: 5px solid var(--gold);
     border-bottom-style: double;
     width: max-content;
+}
+
+.line-above {
+    border-top: 5px solid var(--gold);
+    border-top-style: double;
+    /* width: max-content; */
+}
+
+.line-above-below {
+    border-top: 5px solid var(--gold);
+    border-top-style: double;
+    border-bottom: 5px solid var(--gold);
+    border-bottom-style: double;
+    /* width: max-content; */
 }
 
 
@@ -249,7 +288,7 @@ datalist:focus {
 
 .event-floors article {
     flex-basis: 33.333333%;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .event-floors article h2 {
@@ -264,12 +303,18 @@ datalist:focus {
     gap: 10%;
 }
 
+.double-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .side-bar {
-    flex-basis: 30%;
+    flex-basis: 50%;
+    max-width: 3px;
 }
 
 .main-content {
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .main-content .event-summary--text {
@@ -287,6 +332,7 @@ datalist:focus {
 .event-summary--text button,
 .event-summary--text .btn {
     margin-top: 1.6rem;
+    margin-right: .5rem;
 }
 
 ul {
@@ -321,6 +367,22 @@ button,
     font-family: var(--ff-bold);
     cursor: pointer;
     text-align: center;
+}
+
+.btn-uno {
+    color: var(--dark);
+    background-color: var(--gold);
+}
+
+.btn-uno:hover,
+.btn-uno:active {
+    color: white;
+}
+
+.btn-cancel {
+    background-color: rgb(141, 1, 1);
+    color: white;
+
 }
 
 .btn-bookevent {
@@ -412,7 +474,7 @@ button,
     font-size: .8rem;
 }
 
-.sub-label-contents {
+.sub-label-contents--flex {
     display: flex;
     justify-content: space-between;
     align-items: center;

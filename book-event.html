@@ -92,12 +92,18 @@
                     <option value="">Team Bonding</option>
                 </select>
 
-                <label for="">Catering</label>
-                <select name="catering" id="catering">
-                    <option value="">Select a catering type</option>
-                    <option value="">Self cater</option>
-                    <option value="">In-house cater</option>
-                </select>
+                <label for="catering">Catering</label>
+                <div class="sub-label-contents">
+                    <div>
+                        <input type="radio" name="catering" id="self-cater" value="Self cater">
+                        <label for="self-cater">Self cater</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="catering" id="in-house-cater" value="In house cater">
+                        <label for="in-house-cater">In-house cater (Upload custom menu)</label>
+                    </div>
+                    <input type="file" name="" id="">
+                </div>
 
                 <label for="">Refreshment</label>
                 <select name="refreshment" id="refreshment">
@@ -120,7 +126,7 @@
                 </select>
 
                 <label for="">Security deposit</label>
-                <div class="sub-label-contents">
+                <div class="sub-label-contents sub-label-contents--flex">
                     <div>
                         <input type="radio" name="security-deposit" id="required" value="Required">
                         <label for="required">Required</label>
@@ -135,6 +141,29 @@
                         <option value="">Not paid</option>
                     </select>
                 </div>
+
+                <label for="">Mode of Payment</label>
+                <div class="sub-label-contents">
+                    <div>
+                        <input type="radio" name="mode-of-payment" id="cash" value="Cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mode-of-payment" id="transfer" value="Transfer">
+                        <label for="transfer">Transfer</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mode-of-payment" id="pos" value="POS">
+                        <label for="pos">POS (Upload proof of payment)</label>
+                    </div>
+                    <input type="file" name="" id="">
+                </div>
+                
+                <select name="payment-status" id="payment-status">
+                    <option value="">Select a payment status</option>
+                    <option value="">Full payment</option>
+                    <option value="">Part payment</option>
+                </select>
 
                 <label for="">Payment status</label>
                 <select name="payment-status" id="payment-status">
